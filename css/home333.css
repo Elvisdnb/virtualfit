@@ -1,0 +1,479 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Showcase section styling */
+
+#showcase {
+    background-image: url('../img/showcase-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+#showcase .navbar {
+    z-index: 99 !important;
+}
+
+#showcase .navbar .navbar-brand img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.navbar .navbar-nav {
+    margin-right: 80px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    position: relative !important;
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 20px;
+    color: white !important;
+    overflow: hidden !important;
+    transition: 0.5s all !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:before {
+    content: '' !important;
+    width: 30px !important;
+    position: absolute !important;
+    border-bottom: 2px solid white !important;
+    bottom: 0 !important;
+    right: 350px !important;
+    transition: 0.5s all !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover:before {
+    right: 0 !important;
+}
+
+.navbar .navbar-nav {
+    float: right !important;
+    text-align: right !important;
+}
+
+nav .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
+
+nav .fa-bars {
+    color: #fff !important;
+    font-size: 20px;
+}
+
+#showcase .show-text h3 {
+    font-size: 40px;
+    color: white;
+    margin-top: 13%;
+    margin-left: 6%;
+}
+
+#showcase .show-text h3 span {
+    color: #00b2ee;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+/* Welcome section styling */
+
+#welcome {
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+#welcome .welcome-img img {
+    width: 100%;
+}
+
+#welcome h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#welcome .drop {
+    padding-top: 15px;
+}
+
+#welcome .welcome-p-1 {
+    padding-top: 20%;
+    font-size: 24px;
+    font-weight: 550;
+}
+
+#welcome .welcome-p-2 {
+    padding-top: 1%;
+    font-size: 16px;
+}
+
+#welcome button {
+    background-color: #00b2ee;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+}
+
+
+/* Services page */
+
+#services {
+    background-color: rgb(236, 236, 236);
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#services .software {
+    margin-top: 40%;
+}
+
+#services .hardware {
+    margin-top: 25%;
+}
+
+#services .graphics {
+    margin-top: 10%;
+}
+
+#services .content {
+    margin-top: 65%;
+}
+
+#services h2 {
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1.2;
+    margin-bottom: 6%;
+}
+
+#services h3 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+}
+
+#services p {
+    font-size: 14px;
+    margin-top: -9px;
+}
+
+#services .services-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 65px;
+}
+
+#services-m {
+    display: none;
+}
+
+
+/* portfolio section style */
+
+
+/* #portfolio .portfolio-img img {
+  width: 100%;
+} */
+
+#portfolio {
+    padding: 50px 0px;
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1.2;
+    margin-bottom: 4%;
+}
+
+#portfolio .portfolio-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#portfolio .portfolio-image img {
+    width: 100%;
+}
+
+#portfolio .portfolio-image p {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 0%;
+    bottom: 0;
+    margin-left: 30px;
+    font-size: 20px;
+    transform: translate(0%, 0);
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 1;
+}
+
+#portfolio .portfolio-image:hover p {
+    transform: translate(0%, 50%);
+    bottom: 50%;
+    opacity: 1;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+#portfolio .portfolio-image:hover .overlay {
+    opacity: 0.8;
+    height: 100%;
+}
+
+
+/* work section styling */
+
+#work {
+    color: white;
+    background-color: #00b2ee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#work h1 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+#work p {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+#work button {
+    padding: 7px 20px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid white;
+    color: #00b2ee;
+    font-weight: 600;
+}
+
+
+/* Responsiveness for Tablets */
+
+@media only screen and (min-width: 568px) and (max-width: 1024px) {
+    /* showcase section tab style */
+    #showcase .show-text h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 6%;
+    }
+    #showcase .show-text h3 span {
+        color: #00b2ee;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    #showcase .navbar .navbar-brand img {
+        width: 65%;
+        margin-left: 0%;
+    }
+    .navbar .navbar-nav {
+        margin-right: 0px;
+    }
+    nav .fa-bars {
+        color: #fff !important;
+        font-size: 30px;
+    }
+    /* Welcome section tab styling */
+    #welcome {
+        padding-top: 1%;
+        padding-bottom: 5%;
+    }
+    #welcome .welcome-img img {
+        margin-top: 15%;
+        width: 90%;
+    }
+    #welcome h2 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #welcome .drop {
+        padding-top: 15px;
+    }
+    #welcome .welcome-p-1 {
+        padding-top: 5%;
+        font-size: 18px;
+        font-weight: 550;
+    }
+    /* services section tab style */
+    #services {
+        display: none;
+    }
+    #services-m {
+        display: block;
+        background-color: rgb(233, 233, 233);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #services-m .software {
+        margin-top: 4%;
+    }
+    #services-m .hardware {
+        margin-top: 6%;
+    }
+    #services-m .graphics {
+        margin-top: 6%;
+    }
+    #services-m .content {
+        margin-top: 6%;
+    }
+    #services-m img {
+        width: 50px;
+        /* height: 50px; */
+        margin-bottom: 10px;
+    }
+    #services-m h2 {
+        font-size: 24px;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 1.2;
+        margin-bottom: 10%;
+    }
+    #services-m h3 {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 20px;
+        letter-spacing: 1.2px;
+    }
+    #services-m p {
+        font-size: 14px;
+        margin-top: -9px;
+    }
+}
+
+
+/* Responsiveness for phones */
+
+@media only screen and (max-width: 568px) {
+    /* showcase section mobile style */
+    #showcase .show-text h3 {
+        font-size: 25px;
+        margin-top: 45%;
+        margin-left: 6%;
+    }
+    #showcase .show-text h3 span {
+        color: #00b2ee;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    #showcase .navbar .navbar-brand img {
+        width: 45%;
+        margin-left: 0%;
+    }
+    .navbar .navbar-nav {
+        margin-right: 0px;
+    }
+    /* welcome section mobile style */
+    #welcome {
+        padding-top: 1%;
+        padding-bottom: 15%;
+    }
+    #welcome h2 {
+        margin-bottom: 45px;
+    }
+    #welcome .welcome-img img {
+        width: 100%;
+        padding: 0 10px;
+    }
+    #welcome .welcome-p-1 {
+        text-align: center;
+    }
+    #welcome .welcome-p-2 {
+        text-align: center;
+    }
+    #welcome button {
+        background-color: #00b2ee;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        margin-top: 20px;
+    }
+    /* services section mobile style */
+    #services {
+        display: none;
+    }
+    #services-m {
+        display: block;
+        background-color: rgb(233, 233, 233);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #services-m .software {
+        margin-top: 4%;
+    }
+    #services-m .hardware {
+        margin-top: 6%;
+    }
+    #services-m .graphics {
+        margin-top: 6%;
+    }
+    #services-m .content {
+        margin-top: 6%;
+    }
+    #services-m img {
+        width: 50px;
+        /* height: 50px; */
+        margin-bottom: 10px;
+    }
+    #services-m h2 {
+        font-size: 24px;
+        color: black;
+        font-weight: 600;
+        letter-spacing: 1.2;
+        margin-bottom: 10%;
+    }
+    #services-m h3 {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 20px;
+        letter-spacing: 1.2px;
+    }
+    #services-m p {
+        font-size: 14px;
+        margin-top: -9px;
+    }
+    /* work section mobile styling */
+    #work h1 {
+        font-size: 20px;
+    }
+    #work p {
+        font-size: 13px;
+    }
+    #work button {
+        padding: 5px 13px;
+        border-radius: 5px;
+        border: 1px solid white;
+        color: #00b2ee;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
